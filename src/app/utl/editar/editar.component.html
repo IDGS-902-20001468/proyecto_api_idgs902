@@ -1,0 +1,12 @@
+<h3>Editar</h3>
+<hr>
+<form (ngSubmit)="editar()">
+  <input type="text" name="nombre" [(ngModel)]="dataSource.nombre"  [value]="dataSource.nombre" placeholder="Nombre">
+  <input value="dataSource.edad" type="number" name="edad" [value]="dataSource.edad" [(ngModel)]="dataSource.edad" placeholder="Edad">
+  <input value="dataSource.correo" type="email" name="correo" [(ngModel)]="dataSource.correo" [value]="dataSource.correo" placeholder="Correo">
+  <button type="submit" class="btn btn-primary">Editar</button>
+  {{dataSource.nombre}}
+  {{dataSource.id}}
+  {{dataSource.correo}}
+  {{dataSource.edad}}
+</form>
